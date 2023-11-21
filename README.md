@@ -1,7 +1,7 @@
 ﻿For my brilliant friend Steve.
 
 AOT-Safe, Source-Generated, ViewLocation for Avalonia
-============================
+===========================
       
 1) Assembly-Setup
 1.1) The Source-Gen assembly is netstandard2.0 and requires: 
@@ -17,7 +17,7 @@ AOT-Safe, Source-Generated, ViewLocation for Avalonia
 1.2) Keep in mind there can be problems when trying to change the roslyn-
      assemblies' versions due to the Avaloniaan dependency.
 
-+++++++++++++++++++++++++++
+++++++++++++++++++++++++++
 
 2) Usage
 2.1) Set the import-usings via the `AddNamesspaceUsings()`-method [marked `A)`]
@@ -28,10 +28,10 @@ AOT-Safe, Source-Generated, ViewLocation for Avalonia
 2.5) In the class that references the SourceGen, modify the reference, adding
      `OutputItemType="Analyzer" ReferenceOutputAssembly="false"` to the end of the Project-Ref.
  
- ============================
+ ==========================
   <ProjectReference Include="..\SourceGenerator.ViewLocator\SourceGenerator.ViewLocator.csproj"
 	  OutputItemType="Analyzer" ReferenceOutputAssembly="false" />  
- ===========================
+ ==========================
 
  2.6) Make sure the ViewLocator.cs class provides the same functionality like (or is) the ViewLocator.cs 
       in this project. It needs the Locator-Dictionary and has to use the factories.
@@ -42,7 +42,7 @@ AOT-Safe, Source-Generated, ViewLocation for Avalonia
       
       In the .csproj that references the Source-Generator add these settings to the main Propertygroup:
 
- ==========================
+ =========================
   <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
   <CompilerGeneratedFilesOutputPath>$(ProjectDir)GeneratedFiles</CompilerGeneratedFilesOutputPath>
  =========================
