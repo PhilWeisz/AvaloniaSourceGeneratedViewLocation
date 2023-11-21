@@ -6,7 +6,7 @@
              xmlns:vm="clr-namespace:AvaloniaSourceGeneratedViewLocation.ViewModels"
              xmlns:v="clr-namespace:AvaloniaSourceGeneratedViewLocation"
              x:DataType="vm:AViewModel"
-             x:Class="AvaloniaSourceGeneratedViewLocation.AView">
+             x:Class="AvaloniaSourceGeneratedViewLocation.Views.AView">
   <Grid>
     <TextBox>Hehe</TextBox>
   </Grid>

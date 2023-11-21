@@ -6,7 +6,7 @@
              xmlns:v="clr-namespace:AvaloniaSourceGeneratedViewLocation"
              x:DataType="vm:AViewModel"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="AvaloniaSourceGeneratedViewLocation.BView">
+             x:Class="AvaloniaSourceGeneratedViewLocation.Views.BView">
   <Grid>
     <TextBox>Hihi</TextBox>
   </Grid>

@@ -1,11 +1,12 @@
 ﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace SourceGenerator.ViewLocator
+namespace AvaloniaSourceGeneratedViewLocation.SourceGenerator.ViewLocator
 {
 // Creates the Dictionary with the Initializers for the Views, and a method `PopulateViewModelViewMappings`
 // which can add it to the `Locator` dictionary [in the ViewLocator] which gets consumed by the `ViewLocator` 

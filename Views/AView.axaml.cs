@@ -1,8 +1,7 @@
-using Avalonia;
+using System;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace AvaloniaSourceGeneratedViewLocation;
+namespace AvaloniaSourceGeneratedViewLocation.Views;
 
 public partial class AView : UserControl
 {

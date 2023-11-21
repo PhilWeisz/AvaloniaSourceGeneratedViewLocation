@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
   </PropertyGroup>
   <!-- PROPS FOR DEBUGGING GENERATOR -->
@@ -14,6 +15,13 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AvaloniaXaml Remove="SourceGenerator.ViewLocator\obj\**" />
+    <Compile Remove="SourceGenerator.ViewLocator\obj\**" />
+    <EmbeddedResource Remove="SourceGenerator.ViewLocator\obj\**" />
+    <None Remove="SourceGenerator.ViewLocator\obj\**" />
   </ItemGroup>
   
   <ItemGroup>
